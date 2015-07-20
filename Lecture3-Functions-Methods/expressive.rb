@@ -1,8 +1,10 @@
 def can_divide_by?(number)
-  return "No way!" if number.zero?
-  "Sure"
+  return false if number.zero?
+  true
 end
 
-puts can_divide_by? 3 # => Sure
-puts can_divide_by? 0 # => No way!
+puts can_divide_by? 3 # => true
+puts can_divide_by? 0 # => false
+
+
 
