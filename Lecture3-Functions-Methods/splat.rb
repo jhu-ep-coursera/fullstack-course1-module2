@@ -1,6 +1,8 @@
 def max(one_param, *numbers, another)
-  # Parameter passed in becomes an array
+  # Variable length parameters passed in 
+  # become an array
   numbers.max
 end
 
-puts max("something", 7, 32, -4, "more")
+puts max("something", 7, 32, -4, "more") # => 32
+

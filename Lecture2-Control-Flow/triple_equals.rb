@@ -3,7 +3,7 @@ if /sera/ === "coursera"
 end
 # => Triple Equals
 
-if "coursera === coursera"
+if "coursera" === "coursera"
   puts "also works"
 end
 # => also works
