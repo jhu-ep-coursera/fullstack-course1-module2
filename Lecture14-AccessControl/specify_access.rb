@@ -1,20 +1,21 @@
-class Person
-  def initialize(age)
-  	self.age = age # LEGAL - EXCEPTION
-  	puts my_age
-  	# puts self.my_age # ILLEGAL
-  	                   # CANNOT USE self or any other receiver
-  end
-
-  private 
-    def my_age
-    	@age
+class MyAlgorithm
+  private
+    def test1
+      "Private"
     end
-    def age=(age)
-      @age = age
+  protected
+    def test2
+      "Protected"
+    end
+  public
+    def public_again
+      "Public"
     end
 end
 
-Person.new(25) # => 25
-
-
+class Another
+  def test1
+    "Private, as declated later on"
+  end
+  private :test1
+end
