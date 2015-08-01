@@ -28,6 +28,7 @@ end
 class Solution
 
   # Implement the following read-only attributes in the Solution class.
+  #* analyzers - an array of LineAnalyzers for each line of text
   #* highest_count_across_lines - a number with the value of the highest frequency of a word
   #* highest_count_words_across_lines - an array with the words with the highest frequency
 
