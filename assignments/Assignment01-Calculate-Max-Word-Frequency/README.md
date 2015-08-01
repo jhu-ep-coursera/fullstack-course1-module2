@@ -23,7 +23,7 @@ The functional goal of the assignment is to read some text from a file and find 
 
 ### Getting Started
 
-1. Download and extract the starter set of files from (URL). The root
+1. Download and extract the starter set of files from (https://github.com/jhu-ep-coursera/fullstack-course1-module2/tree/master/assignments/Assignment01-Calculate-Max-Word-Frequency). The root
 directory of this starter set will be referred to as the root directory
 of your solution.
 ```text
