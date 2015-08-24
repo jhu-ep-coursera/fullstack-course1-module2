@@ -54,7 +54,7 @@ of your solution.
 
   ```text
   --- student-start
-     |-- .rspec
+     |-- .rspec(important hidden file)
      |-- module2_lesson1_formative.rb
      `-- spec
          |-- lesson1_spec.rb
