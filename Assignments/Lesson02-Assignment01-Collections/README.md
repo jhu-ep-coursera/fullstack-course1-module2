@@ -35,15 +35,16 @@ p arr.select { |element| element % 3 == 0 }
 ### Getting Started
 
 1. Download and extract the starter set of files. The root
-directory of this starter set will be referred to as the root directory
+directory of student-start will be referred to as the root directory
 of your solution.
 
   ```text
-  |-- module2_lesson2_formative.rb
-  |-- .rspec (important hidden file)
-  `-- spec
-      |-- lesson2_spec.rb
-      `-- spec_helper.rb
+  --- student-start
+    |-- module2_lesson2_formative.rb
+    |-- .rspec (important hidden file)
+    `-- spec
+        |-- lesson2_spec.rb
+        `-- spec_helper.rb
   ```
 
     * module2_lesson2_formative.rb - contains the starting examples.
