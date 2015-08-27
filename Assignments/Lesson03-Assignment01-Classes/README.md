@@ -25,16 +25,17 @@ thru instance and class methods.
 ### Getting Started
 
 1. Download and extract the starter set of files. The root
-directory of this starter set will be referred to as the root directory
+directory of the student-start will be referred to as the root directory
 of your solution.
 
-```text
-|-- module2_lesson3_formative.rb
-|-- .rspec (important hidden file)
-`-- spec
-    |-- lesson3_spec.rb
-    `-- spec_helper.rb
-```
+  ```text
+  --- student-start
+    |-- module2_lesson3_formative.rb
+    |-- .rspec (important hidden file)
+    `-- spec
+        |-- lesson3_spec.rb
+        `-- spec_helper.rb
+  ```
   * module2_lesson3_formative.rb - contains the starting examples.
   Your solution must be placed within this file.
   * spec - this directory contains tests to verify your solution. You should
@@ -45,36 +46,36 @@ of your solution.
 2. Install the following gems used by the rspec unit tests. You may have
 some of these already installed.
 
-```shell
-$ gem install rspec
-$ gem install rspec-its
-```
+  ```shell
+  $ gem install rspec
+  $ gem install rspec-its
+  ```
 
 3. Run the rspec command to execute the unit tests within the spec
 directory. This command should be run from the root directory of the
 project. This should result in several failures until you complete your
 solution.
 
-```shell
-$ rspec
+  ```shell
+  $ rspec
 
-FFF.
+  FFF.
 
-Failures:
+  Failures:
 
-  1) lesson3 check results unexpected search result
-  2) lesson3 check instance properties missing first_name
-  3) lesson3 check instance properties missing last_name
+    1) lesson3 check results unexpected search result
+    2) lesson3 check instance properties missing first_name
+    3) lesson3 check instance properties missing last_name
 
-Finished in 0.0184 seconds (files took 0.11245 seconds to load)
-4 examples, 3 failures
+  Finished in 0.0184 seconds (files took 0.11245 seconds to load)
+  4 examples, 3 failures
 
-Failed examples:
+  Failed examples:
 
-rspec ./spec/lesson3_spec.rb:13 # lesson3 check results unexpected search result
-rspec ./spec/lesson3_spec.rb:21 # lesson3 check instance properties missing first_name
-rspec ./spec/lesson3_spec.rb:25 # lesson3 check instance properties missing last_name
-```
+  rspec ./spec/lesson3_spec.rb:13 # lesson3 check results unexpected search result
+  rspec ./spec/lesson3_spec.rb:21 # lesson3 check instance properties missing first_name
+  rspec ./spec/lesson3_spec.rb:25 # lesson3 check instance properties missing last_name
+  ```
 
 4. Implement the solution and re-test. 
 
