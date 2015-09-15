@@ -1,3 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+</head>
+<body>
 <h2 id="formative-assignment-for-module-2-lesson-1-case-statement">Formative Assignment for Module #2, Lesson #1: Case Statement</h2>
 <p>The overall goal of this assignment is to implement a program control mechanism using Ruby that</p>
 <ul>
@@ -9,9 +39,8 @@
 <p>The functional goal of the assignment is to rewrite a provided if/else statement using a case statement.</p>
 <h3 id="functional-requirements">Functional Requirements</h3>
 <ol style="list-style-type: decimal">
-<li>Re-write the following if/else statement using a <code>case</code> statement in Ruby.</li>
-</ol>
-<pre class="sourceCode ruby"><code class="sourceCode ruby">some_var = <span class="st">&quot;false&quot;</span>
+<li><p>Re-write the following if/else statement using a <code>case</code> statement in Ruby.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">some_var = <span class="st">&quot;false&quot;</span>
 another_var = <span class="st">&quot;nil&quot;</span>
 
 <span class="kw">if</span> some_var == <span class="st">&quot;pink elephant&quot;</span>
@@ -25,58 +54,50 @@ another_var = <span class="st">&quot;nil&quot;</span>
 
 <span class="kw">else</span>
   puts <span class="st">&quot;I guess nothing matched... But why?&quot;</span>
-<span class="kw">end</span></code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>Analyze the outcome of the original script and state the reasons why each of the first three (3) tests fail and how they could be made to succeed.</li>
-</ol>
+<span class="kw">end</span></code></pre></div></li>
+<li><p>Analyze the outcome of the original script and state the reasons why each of the first three (3) tests fail and how they could be made to succeed.</p>
 <pre class="shell"><code>$ ruby module2_lesson1_formative.rb
 
 I guess nothing matched... But why?</code></pre>
-<p>Change the source code of the solution to verify your conclusions.</p>
+<p>Change the source code of the solution to verify your conclusions.</p></li>
+</ol>
 <h3 id="getting-started">Getting Started</h3>
 <ol style="list-style-type: decimal">
-<li>Download and extract the starter set of files. The root directory of the student-start will be referred to as the root directory of your solution.</li>
-</ol>
+<li><p>Download and extract the starter set of files. The root directory of the student-start will be referred to as the root directory of your solution.</p>
 <pre class="text"><code>--- student-start
+   |-- .rspec(important hidden file)
    |-- module2_lesson1_formative.rb
    `-- spec
        |-- lesson1_spec.rb
        `-- spec_helper.rb</code></pre>
 <ul>
+<li>.rspec - configuration file for unit tests. If you move your files you must take care to also copy this file.</li>
 <li>module2_lesson1_formative.rb - contains the starting if/else statements. Your solution must be placed within this file.</li>
 <li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
-<li>.rspec - configuration file for unit tests. If you move your files you must take care to also copy this file.</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Install the following gems used by the rspec unit tests. You may have some of these already installed.</li>
-</ol>
+</ul></li>
+<li><p>Install the following gems used by the rspec unit tests. You may have some of these already installed.</p>
 <pre class="shell"><code>$ gem install rspec
-$ gem install rspec-its</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li>Run the provided Ruby script containing the if/else</li>
-</ol>
+$ gem install rspec-its</code></pre></li>
+<li><p>Run the provided Ruby script containing the if/else</p>
 <pre class="shell"><code>$ ruby module2_lesson1_formative.rb
 
-I guess nothing matched... But why?</code></pre>
-<ol start="4" style="list-style-type: decimal">
-<li>Run the rspec command to execute the unit tests within the spec directory. This command should be run from the root directory of the project. This should result in several failures until you complete your solution.</li>
-</ol>
-<pre class="shell"><code>  $ rspec
+I guess nothing matched... But why?</code></pre></li>
+<li><p>Run the rspec command to execute the unit tests within the spec directory. This command should be run from the root directory of the project. This should result in several failures until you complete your solution.</p>
+<pre class="shell"><code>$ rspec
 
-.FFF
+.FFFF
 
 Failures:
 ...
 Finished in 0.02247 seconds (files took 0.1567 seconds to load)
-4 examples, 3 failures
+5 examples, 4 failures
 
 Failed examples:
 
 rspec ./spec/case_spec.rb:17 # lesson1 check implementation remove if clause
 rspec ./spec/case_spec.rb:21 # lesson1 check implementation remove elsif clause
-rspec ./spec/case_spec.rb:25 # lesson1 check implementation missing case</code></pre>
-<ol start="5" style="list-style-type: decimal">
-<li>Implement the solution and re-test.</li>
+rspec ./spec/case_spec.rb:25 # lesson1 check implementation missing case</code></pre></li>
+<li><p>Implement the solution and re-test.</p></li>
 </ol>
 <h3 id="technical-requirements">Technical Requirements</h3>
 <ol style="list-style-type: decimal">
@@ -90,6 +111,8 @@ rspec ./spec/case_spec.rb:25 # lesson1 check implementation missing case</code><
 <pre class="shell"><code>$ rspec
 
 Finished in 0.00304 seconds (files took 0.16353 seconds to load)
-4 examples, 0 failures</code></pre>
+5 examples, 0 failures</code></pre>
 <h3 id="submission">Submission</h3>
 <p>There is no submission required for this assignment but the skills learned will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>
+</body>
+</html>
