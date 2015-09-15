@@ -101,7 +101,8 @@ solution.
 
     rspec ./spec/case_spec.rb:17 # lesson1 check implementation remove if clause
     rspec ./spec/case_spec.rb:21 # lesson1 check implementation remove elsif clause
-    rspec ./spec/case_spec.rb:25 # lesson1 check implementation missing case
+    rspec ./spec/case_spec.rb:25 # lesson1 check implementation remove elsif clause
+    rspec ./spec/case_spec.rb:29 # lesson1 check implementation missing case
     ```
 
 5. Implement the solution and re-test.
