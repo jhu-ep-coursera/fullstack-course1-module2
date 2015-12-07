@@ -1,5 +1,5 @@
-some_var = "false"
-another_var = "nil"
+some_var = false
+another_var = nil
 
 if some_var == "pink elephant"
   puts "Don't think about the pink elephant!"
