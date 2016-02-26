@@ -22,14 +22,19 @@ describe "lesson2" do
         expect(n).to be >= 5000
       }
     end
+    # ensure that the first element in the array is 9999
     it "unexpected maximum number in array" do
         expect(numbers.first).to be == 9999
     end
+    # ensure that the last element in the array is 5001
+    # remember every element in the array >= 5000
     it "unexpected minimum number in array" do
         expect(numbers.last).to be == 5001
     end
+    # ensure that the array contains the correct number of elements
+    # taking the last element and dividing by 3; 5001/3=1667
     it "unexpected number of elements" do
-        expect(numbers.size).to be == (5001/3)
+        expect(numbers.size).to be == 1667
     end
 
     it "not modulo 3" do
