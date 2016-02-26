@@ -22,6 +22,15 @@ describe "lesson2" do
         expect(n).to be >= 5000
       }
     end
+    it "unexpected maximum number in array" do
+        expect(numbers.first).to be == 9999
+    end
+    it "unexpected minimum number in array" do
+        expect(numbers.last).to be == 5001
+    end
+    it "unexpected number of elements" do
+        expect(numbers.size).to be == (5001/3)
+    end
 
     it "not modulo 3" do
       numbers.each { |n|
