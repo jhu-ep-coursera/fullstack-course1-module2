@@ -9,42 +9,43 @@
 </head>
 <body>
 <h2 id="formative-assignment-for-module-2-lesson-3-classes">Formative Assignment for Module #2, Lesson #3: Classes</h2>
-<p>The overall goal of this assignment is to implement a Ruby class with - class attribute(s) - class method(s) - initializer method(s) - instance attribute(s) - instance method(s)</p>
+<p>The overall goal of this assignment is to implement a Ruby class with</p>
+<ul>
+<li>class attribute(s)</li>
+<li>class method(s)</li>
+<li>initializer method(s)</li>
+<li>instance attribute(s)</li>
+<li>instance method(s)</li>
+</ul>
 <p>The functional goal of the assignment is to write a <code>Person</code> class that will maintain state thru instance and class attributes and provide access thru instance and class methods.</p>
 <h3 id="functional-requirements">Functional Requirements</h3>
 <ol style="list-style-type: decimal">
-<li>Write a <code>Person</code> class with a</li>
-</ol>
+<li><p>Write a <code>Person</code> class with a</p>
 <ul>
 <li><code>first_name</code></li>
 <li><code>last_name</code></li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
+</ul></li>
 <li><p>Track each instance of <code>Person</code>.</p></li>
 <li><p>Search for a <code>Person</code> by <code>last_name</code>.</p></li>
 </ol>
 <h3 id="getting-started">Getting Started</h3>
 <ol style="list-style-type: decimal">
-<li>Download and extract the starter set of files. The root directory of this starter set will be referred to as the root directory of your solution.</li>
-</ol>
-<pre class="text"><code>|-- module2_lesson3_formative.rb
-|-- .rspec (important hidden file)
-`-- spec
-    |-- lesson3_spec.rb
-    `-- spec_helper.rb</code></pre>
+<li><p>Download and extract the starter set of files. The student-start directory of this starter set will be referred to as the root directory of your solution.</p>
+<pre class="text"><code>--- student-start
+  |-- .rspec (important hidden file)
+  |-- module2_lesson3_formative.rb
+  `-- spec
+      |-- lesson3_spec.rb
+      `-- spec_helper.rb</code></pre>
 <ul>
+<li>.rspec - configuration file for unit tests. If you move your files you must take care to also copy this file.</li>
 <li>module2_lesson3_formative.rb - contains the starting examples. Your solution must be placed within this file.</li>
 <li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
-<li>.rspec - configuration file for unit tests. If you move your files you must take care to also copy this file.</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Install the following gems used by the rspec unit tests. You may have some of these already installed.</li>
-</ol>
+</ul></li>
+<li><p>Install the following gems used by the rspec unit tests. You may have some of these already installed.</p>
 <pre class="shell"><code>$ gem install rspec
-$ gem install rspec-its</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li>Run the rspec command to execute the unit tests within the spec directory. This command should be run from the root directory of the project. This should result in several failures until you complete your solution.</li>
-</ol>
+$ gem install rspec-its</code></pre></li>
+<li><p>Run the rspec command to execute the unit tests within the spec directory. This command should be run from the root directory of the project. This should result in several failures until you complete your solution.</p>
 <pre class="shell"><code>$ rspec
 
 FFF.
@@ -62,44 +63,37 @@ Failed examples:
 
 rspec ./spec/lesson3_spec.rb:13 # lesson3 check results unexpected search result
 rspec ./spec/lesson3_spec.rb:21 # lesson3 check instance properties missing first_name
-rspec ./spec/lesson3_spec.rb:25 # lesson3 check instance properties missing last_name</code></pre>
-<ol start="4" style="list-style-type: decimal">
-<li>Implement the solution and re-test.</li>
+rspec ./spec/lesson3_spec.rb:25 # lesson3 check instance properties missing last_name</code></pre></li>
+<li><p>Implement the solution and re-test.</p></li>
 </ol>
 <h3 id="technical-requirements">Technical Requirements</h3>
 <ol style="list-style-type: decimal">
 <li><p>Implement all parts of this assignment within the module2_lesson3_formative.rb file in the root directory of your solution. The grader will load this specific file from this location.</p></li>
 <li><p>Your script must contain a <code>Person</code> class</p></li>
-<li><p>The <code>Person</code> class must have</p></li>
-</ol>
+<li><p>The <code>Person</code> class must have</p>
 <ul>
 <li>a first_name and last_name attribute with public accessors for setting and getting the attributes</li>
 <li>a class attribute called <code>people</code> that holds an array of objects</li>
 <li>an <code>initialize</code> method to initialize each instance</li>
 <li>a <code>to_s</code> method to return a formatted string of the person's name</li>
 <li>a <code>search</code> method to locate all people with a matching <code>last_name</code></li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li>The <code>Person</code> <code>initialize</code> method must</li>
-</ol>
+</ul></li>
+<li><p>The <code>Person</code> <code>initialize</code> method must</p>
 <ul>
 <li>accept two parameters (first_name and last_name) and use them to initialize the first_name, and last_name instance attributes.</li>
 <li>insert the created instance (self) into the <code>people</code> class variable</li>
-</ul>
-<ol start="5" style="list-style-type: decimal">
-<li>The <code>Person</code> <code>to_s</code> instance method must</li>
-</ol>
+</ul></li>
+<li><p>The <code>Person</code> <code>to_s</code> instance method must</p>
 <ul>
 <li>return a formatted string as <code>first_name(space)last_name</code></li>
-</ul>
-<ol start="6" style="list-style-type: decimal">
-<li>The <code>Person</code> <code>search</code> class method must</li>
-</ol>
+</ul></li>
+<li><p>The <code>Person</code> <code>search</code> class method must</p>
 <ul>
 <li>accept a <code>last_name</code> parameter</li>
 <li>search the <code>people</code> class attribute for instances with the same <code>last_name</code></li>
 <li>return a collection of matching instances</li>
-</ul>
+</ul></li>
+</ol>
 <h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
 <p>Unit tests have been provided in the bootstrap files that can be used to evaluate your solution. They must be run from the same directory as your solution.</p>
 <pre class="shell"><code>$ rspec
