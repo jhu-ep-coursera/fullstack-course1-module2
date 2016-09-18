@@ -89,18 +89,19 @@ solution.
 ```shell
   $ rspec
 
-.FFF
+.FFFF
 
 Failures:
 ...
 Finished in 0.02247 seconds (files took 0.1567 seconds to load)
-4 examples, 3 failures
+5 examples, 4 failures
 
 Failed examples:
 
-rspec ./spec/case_spec.rb:17 # lesson1 check implementation remove if clause
-rspec ./spec/case_spec.rb:21 # lesson1 check implementation remove elsif clause
-rspec ./spec/case_spec.rb:25 # lesson1 check implementation missing case
+rspec ./spec/lesson1_spec.rb:17 # lesson1 check implementation remove if clause
+rspec ./spec/lesson1_spec.rb:21 # lesson1 check implementation remove elsif clause
+rspec ./spec/lesson1_spec.rb:25 # lesson1 check implementation remove elsif clause
+rspec ./spec/lesson1_spec.rb:29 # lesson1 check implementation missing case
 ```
 
 5. Implement the solution and re-test.
@@ -127,7 +128,7 @@ as your solution.
 $ rspec
 
 Finished in 0.00304 seconds (files took 0.16353 seconds to load)
-4 examples, 0 failures
+5 examples, 0 failures
 ```
 
 ### Submission
