@@ -23,7 +23,7 @@ describe "lesson1" do
     end
 
     it "missing else clause" do
-      expect(srcCode).not_to include("else")
+      expect(srcCode).to include("else")
     end
 
     it "missing case" do
