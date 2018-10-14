@@ -4,6 +4,8 @@ require_relative '../module2_lesson3_formative.rb'
 
 describe "lesson3" do
 
+  subject { Person }
+
   context "check results" do
     p1 = Person.new("Ivana", "Trump")
     p2 = Person.new("Eric", "Trump")
@@ -29,7 +31,6 @@ describe "lesson3" do
   end
 
   context "check class properties" do
-    subject(:class) { Person }
 
     it "missing search" do
       is_expected.to respond_to(:search) 
